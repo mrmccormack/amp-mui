@@ -22,6 +22,7 @@ pre{overflow:auto}.bordered{border:1px solid rgba(0,0,0,.12)}
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
   <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>
 
 <body>
@@ -69,6 +70,22 @@ pre{overflow:auto}.bordered{border:1px solid rgba(0,0,0,.12)}
       Made with ♥ by <a href="https:https://www.muicss.com">MUICSS</a>
     </div>
   </footer>
+
+  <amp-analytics type="googleanalytics" id="analytics1">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-1174209-4"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+      </script>
+      </amp-analytics>  
 </body>
 
 </html>
